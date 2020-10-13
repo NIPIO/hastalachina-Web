@@ -1,0 +1,43 @@
+.login {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	background: white;
+} 
+
+.registro, .registro div {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registro img{
+	max-width: 30vw;
+	margin: auto;
+}
+
+.registro p {
+	text-align: center;
+	color: black;
+}
+
+#form div {
+	text-align: center;
+	margin: 5%;
+}
+
+#form div input {
+	color: black;
+	display: block;
+}
+
+#form_save {
+	margin:  5%;
+	background: #3b0707;
+	color: white;
+	cursor: pointer;
+}
+#form_save a {
+	color: white
+}

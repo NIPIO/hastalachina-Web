@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<i class=" backButton fa fa-chevron-left" style="color: white" onclick="history.back()"></i>
+<div class="secciones representacion">
+	<div id="titulo">
+		<h4>REPRESENTACIÓN DE MÚSIQUES</h4>
+		<p style="margin: 0">Acompañamiento integral a músiques.</p>
+	</div>
+	<div id="wrapper">
+	  <div id="nicoBlum" onclick="artistasDiv('n')" class="artistas" style="background-image: url({{ asset('img/repreNico.jpg') }});">
+	  		<p id="nombreN" class="nombreArtista">
+	  			Nicolás Blum
+	  		</p>
+	  		<p id="descripcionN" class="descripcionArtista">
+	  			Es músico y poeta. Concibe ambas cosas como vasos comunicantes de un mismo fenómeno: la palabra habitada. Sus composiciones poseen una ineludible impronta tanguera que, sin embargo, encauza hacia una interpretación renovada y original. <br> (imágen: Serena Moyano)
+	  		</p>
+	  </div>
+	  <div id="julianRodriguez" onclick="artistasDiv('j')" class="artistas" style="background-image: url({{ asset('img/repreJuli.jpg') }});">
+	  	  	<p id="nombreJ" class="nombreArtista">
+	  			Julián Rodríguez
+	  		</p>
+	  		<p id="descripcionJ"  class="descripcionArtista">
+	  			Compone y ejecuta arreglos originales de música popular argentina en ukelele, buscando integrar el instrumento en la tradición de nuestro país. <br>(imágen: Sofía Ferraro)
+	  		</p>
+	  	</div>
+	</div>
+</div>
+ {% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   
+	<div class="container login">
+			<div class="row registro">
+				<div><p>HAY ALGUN DATO INCORRECTO POR ESO EL CHINO ESTÁ NOJADO</p></div>
+				<div><img src="{{ asset('chinotriste.png') }}"></div>
+				<div></div>
+				<button id="form_save">
+					<a href="{{ path('login')}}">Reintentar pa calmar al chino.</a>
+				</button>
+			</div>   
+	</div>
+    
+{% endblock %}

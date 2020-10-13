@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %} 
+
+{% block body %} 
+
+      <div class="container login">
+         <div class="row registro">
+            {% if correcto == 'bien' %}
+                <p>Bien, subida!</p>
+            {% elseif correcto == 'mal' %}
+                <p>Hubo un error, probá de nuevo.</p>
+            {% else %}
+                <p>Sólo archivos png, jpg o jpeg!</p>
+            {% endif %}
+            {{ form_start(form) }} 
+            {{ form_widget(form) }} 
+            {{ form_end(form) }} 
+            <button id="form_save">
+               <a href="{{ path('homepage')}}">Volver al sitio.</a>
+            </button>
+         </div>   
+      </div>   
+{% endblock %}  

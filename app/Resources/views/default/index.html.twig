@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="home" class="divFull">
+        <div></div>
+        <div><img src="{{ asset('hlc.jpg') }}"></div>
+        <div></div>
+    </div>
+    <div id="enlaces" class="divFull">
+        <a rel="stylesheet" href="{{ path('redirect' ,  {'div': 'gestora' })}}" class="displayFlex" style="text-decoration: none;background-image:url('{{ asset('img/aru.jpg') }}')">
+            <p>GESTORA CULTURAL</p></a>
+        <a rel="stylesheet" href="{{ path('redirect' ,  {'div': 'representacion' })}}" class="displayFlex" style="text-decoration: none;background-image:url('{{ asset('img/blum.jpg') }}')">
+            <p>REPRESENTACIÓN DE MÚSIQUES</p>  </a>
+        <a rel="stylesheet" href="{{ path('redirect' ,  {'div': 'booking' })}}" class="displayFlex" style="text-decoration: none;background-image:url('{{ asset('img/justo.jpg') }}')">
+            <p>GIRAS</p></a>
+        <a rel="stylesheet" href="{{ path('redirect' ,  {'div': 'gestion' })}}" class="displayFlex" style="text-decoration: none;background-image:url('{{ asset('img/gestion.jpg') }}')">
+            <p>GESTIÓN DE PROYECTOS</p></a>
+    </div>
+    <div id="descripcionHome" class="divFull">
+            <h2>HASTA LA CHINA </h2>
+            <p>Es una productora independiente abocada a la gestión de proyectos artísticos y la representación de músiques. Nació hace cuatro años y, hoy en día, continúa su labor en el área cultural de la Ciudad Autónoma de Buenos Aires. HASTA LA CHINA es llevado adelante principalmente por Ariadna Mierez. </p>
+    </div>
+
+<!-- 
+    <div id="galeria" >
+        <div id="galeriaGestion">
+             {% for imagen in imagenes %}
+                <li>
+                    <img src="{{asset('img/galeria/')}}{{imagen}}" onclick="mostrarModal('{{imagen}}')">
+                </li>
+            {% endfor %}
+                        <div id="mas">Más
+                        </div>
+                        <div id="ocultar"> Ocultar                            
+                        </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal" aria-hidden="true" >
+        <div class="modal-body" >
+            <div id="contenedorImagenExterior"  >
+                <button type="button" class="close" data-dismiss="modal" onclick="cerrarModal()"><i class="fas fa-arrow-left"></i></button>                
+                <div class="contenedorImagenInterior">
+                    <img src="" alt="" id="imagenModal">
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+
+    <footer class="mb-5">
+        <div>
+            <div class="iconos">
+                <a href="https://www.instagram.com/hastalachinaprodu/?hl=es-la" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:hastalachinaproduccion@gmail.com?Subject=Hasta%20La%20China!" target="_blank"><i class="fas fa-at"></i></a>
+            </div>
+        </div>
+    </footer>
+	
+    <div class="row col-12 m-0 text-center mt-5 pt-5">
+        <div class="col-12"   style="font-size:8px!important; font-variant: small-caps; opacity: 0.7">
+        	<a href="http://www.nimapio.com" target="_blank" style="text-decoration:none;">
+        		<span>desarrollado por</span> <span style="color: black">nmp.</span><br><span>buenos aires, argentina. <br> 2020.</span>
+        	</a>
+        </div>
+    </div>
+ {% endblock %}

@@ -1,0 +1,138 @@
+/*MONITOR GENERAL VERTICAL*/
+@media (min-width: 631px) and (orientation: portrait){
+    * {
+        font-size: 2.6vw;  
+    }
+    #descripcionHome {
+        height: 37.5vh!important;
+    }
+/*     #galeriaGestion {
+        max-width: 70vw;
+    }
+    #galeriaGestion img {
+        width: 10vw;
+    }*/
+} 
+@media (min-width: 1px) and (max-width: 644px) and (orientation: portrait){
+  .content{
+        margin-bottom: -30%;
+    }
+}
+  
+/*MONITOR MEIDANO GENERAL*/
+@media (min-width: 360px) and (orientation: landscape){
+    * {
+      font-size: 4vh;
+    }
+    
+    #home img {
+        width: 50%;
+    }
+    .backButton {
+        font-size: 6vh;
+    }
+    #enlaces {
+        height: 100vh;
+    }
+    #enlaces a {
+        height: 50vh;
+    }
+    footer .fab, footer .fas {
+        font-size: 10vh;
+    }
+    #wrapper {
+        display: flex;
+    }
+    .artistas {
+        height: 100%;
+    }
+    .representacion #titulo {
+        height: 28vh;
+        padding: 4% 0% 0%;
+    }
+    .descripcion p, .descripcion u,  .descripcion b  {
+        margin: 0;
+        overflow-y: auto;
+        font-size: 4vh;
+    }
+    .d-md-block p {
+        line-height: 100%;
+    }
+    .content img {
+        width: 50%;
+    }
+    .content{
+        height: 60vh;
+    }
+
+/*     #galeriaGestion {
+        max-width: 70vw;
+    } */
+}
+@media (min-width: 1000px) and (orientation: landscape){
+        * {
+      font-size: 4vh;
+    }
+    .descripcion p, .descripcion u,  .descripcion b, .content p  {
+        font-size: 3vh;
+    }
+    .booking h3 {
+        font-size: 4vh;
+    }
+    .content {
+        margin: 0% 0% -10% 0%;
+        height: 75vh;
+    }
+    #tituloGestion {
+        margin-top: 5%;
+    }
+    #tituloGestion p {
+        margin: 0% 0% 3% 0%;
+    }
+    .backButton {
+        font-size: 3vh;
+    }
+    .d-md-block p {
+        line-height: 100%;
+        width: 80vw;
+        margin: auto;
+    }
+}
+/*MOBILE*/
+/*@ media (max-width: 550px){
+    #galeriaGestion {
+        max-width: 80vw;
+    }
+    #galeriaGestion img {
+        max-width: 55px;
+    }
+} */
+
+
+
+@media (min-width: 360px) and (max-width: 999px) and (orientation: landscape){
+    .carousel-item.active {
+        display: flex
+    }
+    .gestion {
+        height: 30vh;
+    }
+    .bd-example {
+        margin-top: 3%;
+    }
+    .carousel-caption {
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+/* 
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    } */

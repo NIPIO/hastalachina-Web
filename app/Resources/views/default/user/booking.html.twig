@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<i class=" backButton fa fa-chevron-left" style="color: white" onclick="history.back()"></i>
+<div class="secciones booking" style="height:100vh">
+	<div id="bookingTitle">
+		<h4>GIRAS</h4>
+<!--		<span id="textoGeneralBooking">Con Narella Ríos llevamos adelante un proyecto donde ofrecemos servicio de booking, tanto local como en giras. Estos son algunos de nuestros trabajos:</span>-->
+	</div>
+	<div>			
+		<div id="intro-1" class="content">
+		    <img src="{{ asset('img/nicoBlumGiras.jpg') }}">
+		    <p> Gira Julio 2019 de <strong>Nicolás Blum</strong>  por La Pampa y Córdoba</p>
+		</div>
+		<div id="intro-2" class="content">
+		    <img src="{{ asset('img/juliRodriguez.jpg') }}">
+		    <p> Gira Diciembre 2019 de <strong>Julián Rodríguez</strong> por Tucumán y Salta.</p>
+		</div>
+		<div class="bookingBotones">	
+			<div class="open-1">Julio 2019</div>
+			<div class="open-2">Diciembre 2019</div>
+		</div>
+	</div>
+
+</div>
+ {% endblock %}

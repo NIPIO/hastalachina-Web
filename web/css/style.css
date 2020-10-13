@@ -1,0 +1,339 @@
+/*GENERAL*/
+   * {
+        color: white;
+        font-size: 4vw;        
+		line-height: 200%;
+        /* font-family: 'Nanum Gothic', sans-serif; */
+        /* font-family: 'Caladea', serif; */
+        font-family: 'Mukta', sans-serif;
+        }
+
+    body {
+        height: 100%;
+        width: 100%;
+        background-color: #9A0000;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.5s; 
+    }
+
+    h4 {
+          text-decoration: overline;
+          font-size: 1.49rem;
+    }
+    .divFull {
+        height: 50vh;
+        text-align: center;
+    }
+    .divFull div {
+        color: white;
+    }
+
+    .displayFlex {
+        display: flex!important;
+        background-size: contain;
+        background-size: cover;
+        background-position:center;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+   .backButton {
+        position:absolute;
+        cursor: pointer;
+        font-size: 6vw;
+        background: transparent;
+        border: none;
+        margin: 2vh;        
+    }
+    .secciones {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .secciones p {
+        margin: 5% 10%;
+    }
+    .descripcion img {
+        border-radius: 35%;
+        width: 75%;
+        margin: 10%;
+    }
+    
+/*DIV HOME*/  
+    #enlaces {
+        /* height: 30vh!important; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    #enlaces a {
+        width: 50%;
+    }
+    #enlaces a p {
+        letter-spacing: 1vw;
+        margin: 0!important;
+        /* text-shadow: 0 0 3px #FFF, 0 0 3px #FFF; */
+    }
+    #enlaces a img {
+        width: 100%;
+        position: relative;
+    }
+    #imagenHLC {
+        display: none;  
+    }
+
+    #home { 
+        height: 100vh!important;
+        background: #9A0000;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home img {
+        width: 100%;
+        height: 100%;
+        max-width: 550px;
+    }
+    
+    #descripcionHome {
+        margin-top: 10%;
+    }
+    #descripcionHome p {
+        margin: 0 1rem;
+    }
+ /*GALERIA*/
+    #galeria {
+        /* box-shadow: 0px 0px 25px 21px rgba(0,0,0,1);/*  */
+        /* background: black;  */
+        min-height: 40vh;  
+        position: relative;
+        height: auto;
+        margin: 5% 0;
+        display: flex;
+        justify-content: center;
+        padding: auto;
+    }
+    #galeriaGestion {
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: auto;
+    }
+    #galeriaGestion li {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        margin:2px;
+        height: auto;
+        list-style: none;
+    }
+    #galeriaGestion img {
+        width: 17vw;
+        background:gray;
+        /* box-shadow: 9px 10px 5px -3px rgba(0,0,0,0.28); */
+        cursor: pointer;
+    }
+    #ocultar {
+        display: none;
+    }
+    #ocultar, #mas {
+        cursor: pointer;
+        padding: 3vh;
+        font-size: 2vh
+    }
+  
+    .modal {
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
+        height : 100%;
+    }
+    #contenedorImagenExterior {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        height: 100%;
+        opacity: 1;
+    }
+    .contenedorImagenInterior {
+        display: flex;
+    }
+    .contenedorImagenInterior img {
+      max-width: 100%;
+      margin: auto;
+    }
+    #contenedorImagenExterior button {
+      z-index: 19;
+      color: white;
+      right: 0;
+    }
+
+/*GESTORA*/ 
+    .descripcion {
+        height: 100vh;
+        background: black;
+    }
+    .descripcion div {
+        width: 80vw;
+        height: 80vh;
+        margin: auto;
+        padding: auto;
+        background: #9A0000;
+    }
+    .descripcion p, .descripcion u  {
+        margin: 0;
+        font-size: 3.4vw;
+    }
+
+/*BOOKING*/
+.bookingBotones {
+    position:absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+}
+.bookingBotones div {
+    padding:  0% 10%;
+	cursor: pointer;
+}
+#bookingTitle {
+    padding: 5%;
+}
+.bookingDescripcion{
+    height:100%;
+}
+#bookingTitle {
+    height: 40vh
+}
+#intro-1, #intro-2 {
+    display: none;
+}
+.content{
+    height: 80vh;
+    overflow:auto;
+        margin-bottom: -30%;
+
+}
+.content img {
+    width: 100%;
+    height: auto;
+}
+.booking p{
+    background: black;
+}
+/*GESTION*/
+    .carousel-caption { 
+        position: relative!important; 
+        left: 0!important; 
+        right: 0!important; 
+        bottom: 0px;
+        padding: 2%;
+    }
+    .carousel-item{
+        background-color: black;
+    }
+    .carousel-item img{
+        max-height: 55vh;
+        width: auto!important;
+        margin: auto;
+        max-width: 100vw;
+    }
+    .gestion {
+        height: 25vh;
+    }
+    #tituloGestion {
+    	margin-top: 10%;
+    }
+    .carousel a span {
+        background-color: red;
+    }
+    /*CONTACTO*/
+    footer {
+        height: auto;
+        margin: 10% 0% 0% 0%;
+    }
+    footer>div {
+        height: 20vh;
+    }
+    .iconos {
+        display: flex; 
+        justify-content:center;
+    }
+    footer .fab, footer .fas {
+        font-size: 5vh;
+        cursor: pointer;
+        border-radius: 50%;
+        color: black;
+        font-weight: 200;
+    }
+
+    footer a {
+        margin: 5%;
+    }
+
+
+/*REPRESENTANTE*/
+    /* https://codepen.io/rpsthecoder/pen/NAwgPV?__cf_chl_jschl_tk__=ab39794dd89fe199569f1a5d38190768f8f6102d-1591146779-0-AXHCuOe3BYKldXqXZ8NaQiJMT5H_oTKX_AW00C1ApQSE_o72A3so_KwrQ6Yf-UUbCxJ608Gwr5n___RWk01TQUqOmNNWdIFFJ3-Uwhg_0uHvjTloo1GBF55-tLhGgALz-ISsi9IKjwOMuTIAweG7iyFr_VquBbBhCr1sLMur9_TFs28VVmZITIAwOjmGkzjhhz5FwF7qibG3KUrAvZseM9Nc3xVMlmIubUsImIbjaNIVvBW152L-gnkquEmDKxVfd1AtpfogYY1BBlY4W-7lW8XPUhBYS3DC08st8dSFStpQBICczp2XuOPT2V9MoT-K6-IQoo4Fn8zKQRdFlz6jCyE_yBzfaMkSXgQrIoijI9z5 */
+.representacion {
+    height: 100vh;
+}
+.representacion #titulo {
+    height: 18vh;
+    padding: 14% 5%;
+    width: 100%;
+}
+.representacion  p {
+    margin: 0
+}
+#wrapper {
+    width: 100vw;
+    height: 82vh;
+    margin:  auto;
+}
+
+.artistas {
+    position: relative;
+    cursor: pointer;
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 1s;
+    float: left;
+    background-size:contain;
+    background-size:cover;
+}
+.nombreArtista, .descripcionArtista {
+    position: absolute;
+    cursor: pointer;
+    height: 80%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  -webkit-transition: opacity 0.3s;
+    display: flex;
+
+}
+.descripcionArtista {
+  opacity: 0;
+  transition: opacity 1s .5s;
+}
+.nombreArtista {
+  transition: opacity 1s .5s;
+    border: 2px solid;
+}
+
+
+
+
+

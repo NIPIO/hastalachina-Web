@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<i class=" backButton fa fa-chevron-left" style="color: white" onclick="history.back()"></i>
+<div class="secciones gestion">
+	<div id="tituloGestion">
+		<h4>GESTIÓN DE PROYECTOS ARTÍSTICOS</h4>
+		<p>Gestión, acompañamiento y/o asesoramiento de proyectos artísticos.</p>
+	</div>
+</div>
+
+	<div class="bd-example">
+	  <div id="carouselExampleCaptions" class="carousel slide" data-interval="false">
+	  	  <ul class="carousel-indicators" style="position:absolute;position:fixed;bottom:0">
+		    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+		    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+		  </ul>
+
+	  <!-- <div id="carouselExampleCaptions" > -->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img  src="{{ asset('img/nocturna.jpg') }}" class="d-block w-100">
+				<div class="carousel-caption d-md-block">
+					<h5>NOCTURNA EDITORA</h5>
+					<p>Editorial especializada en psicoanálisis y filosofía. (Logo: Julia Vallejo Puszkin)</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img  src="{{ asset('img/dhfuego.jpg') }}" class="d-block w-100">
+				<div class="carousel-caption d-md-block">
+					<h5>DONDE HUBO FUEGO</h5>
+					<p>Es un ciclo audiovisual online, llevado a cabo con Paloma Sesma, donde se convocan artistas dramátiques para interpretar monólogos del mundo del cine y las series.</p> 
+				</div>
+			</div>
+			<div class="carousel-item ">
+				<img  src="{{ asset('img/variaciones.jpg') }}" class="d-block w-100">
+				<div class="carousel-caption d-md-block">
+					<h5>VARIACIONES</h5>
+					<p>Ya cuenta con más de diez ediciones. Es un ciclo que invita a les actrices y actores a navegar entre el teatro y el cine. A partir de famosas escenas cinematográficas, crean otras en formato teatral. Así, entre ideas propias y ajenas, ponen el cuerpo a una nueva interpretación. (imágen: Alicia Lovera)</p> 
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img  src="{{ asset('img/biosonora.jpg') }}" class="d-block w-100">
+				<div class="carousel-caption d-md-block">
+					<h5>BIOSONORA</h5>
+					<p>Fue un ciclo que invitaba a conocer el recorrido de les artistas a partir de sus influencias musicales. En un espacio íntimo, les músiques repasaban de manera unplugged tres momentos musicales que los marcaron a lo largo de su vida. Entre canciones propias y ajenas, contruían y compartían su propia biografía sonora. (imágen: Adriana Almagro)</p> 
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img  src="{{ asset('img/ciclotimia.jpg') }}" class="d-block w-100">
+				<div class="carousel-caption d-md-block">
+					<h5>CICLOTIMIA</h5>
+					<p>Fue un ciclo itinerante y temático de música y poesía con diez volúmenes, que se desarrolló en diferentes espacios culturales de Capital Federal. Por él pasaron más de cincuenta artistas. (imágen: Malena Peralta)</p> 
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img  src="{{ asset('img/orbita.jpg') }}" class="d-block w-100">
+				<div class="carousel-caption d-md-block">
+					<h5>ÓRBITA</h5>
+					<p>Fue un ciclo de bandas en formato eléctrico, que giraba una y otra vez alrededor de la canción. (imágen: Chloé Leibgorin)</p> 
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img  src="{{ asset('img/boedoantiguo.jpg') }}" class="d-block w-100">
+				<div class="carousel-caption d-md-block">
+					<h5>BOEDO ANTIGUO (y todo el cielo)</h5>
+					<p>Ciclo de tango en el restaurant Boedo Antiguo. (imágen: Chloé Leibgorin)</p> 
+				</div>
+			</div>
+		</div>
+	</div>
+ {% endblock %}
